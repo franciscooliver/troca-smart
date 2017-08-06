@@ -7,12 +7,19 @@ using TrocaSmart.LojaVirtual.Dominio.Repositorio;
 
 namespace TrocaSmart.LojaVirtual.Web.Controllers
 {
-    public class ProdutoController : Controller
+    public class HomeController : Controller
     {
-        // Nessa Class é aonde será implementadas as query
         private ProdutoRepositorio _repositorio;
-        // GET: Produto
+        // GET: Home
         public ActionResult Index()
+        {
+            _repositorio = new ProdutoRepositorio();
+            var produtos = _repositorio.Produtos.Take(6);//Take traz apenas os 6 primeiros
+
+            return View(produtos);
+
+        }
+        public ActionResult ListaProduto()
         {
             _repositorio = new ProdutoRepositorio();
             var produtos = _repositorio.Produtos;

@@ -1,0 +1,71 @@
+
+
+  html, body, .capa {
+	height: 100%;
+	overflow: auto;
+}
+body {
+	
+	background: url('imagens/background_principal.jpg');
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+.navbar-inverse {
+    background-color: #F8F8F8;
+   border: 1px solid white;
+}
+
+.img-logo {
+	height: 132px;
+	width: 132px;
+	display: block;
+	background-size: contain;
+	color: transparent;
+}
+.navbar-brand{
+	padding: 20px 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: black;
+	margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a {
+	color: #F4A460;
+}
+
+
+#imagens_smartphones {
+	background: white;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+
+
+#slide-div{
+	margin-top: 50px;
+	padding-top: 50px;
+	width: 853px;
+	height: 350px;
+}
+
+@media screen and (max-width: 767px){
+	.navbar-inverse {
+    	background-color: #F8F8F8;
+   		border: 1px solid white;
+	}
+
+	.navbar-brand{
+		padding: 10px 5px;
+}
+
+	.navbar-inverse> span .icon-bar {
+    	background-color: black;
+   
+	}
+
+}
+

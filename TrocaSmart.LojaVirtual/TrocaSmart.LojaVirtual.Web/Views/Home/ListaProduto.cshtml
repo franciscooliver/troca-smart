@@ -1,17 +1,16 @@
 ﻿@model IEnumerable<TrocaSmart.LojaVirtual.Dominio.Entidade.Produto>
 
 @{
-    ViewBag.Title = "Produtos";
+    ViewBag.Title = "ListaProduto";
 }
 
-<h2>Lista de Produtos</h2>
+<h2>Lista de Todos os Produtos</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
-      
         <th>
             @Html.DisplayNameFor(model => model.Nome)
         </th>
@@ -38,7 +37,6 @@
 
 @foreach (var item in Model) {
     <tr>
-        
         <td>
             @Html.DisplayFor(modelItem => item.Nome)
         </td>
