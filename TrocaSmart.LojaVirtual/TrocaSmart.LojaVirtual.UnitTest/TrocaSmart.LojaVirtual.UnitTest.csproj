@@ -53,6 +53,16 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrocaSmart.LojaVirtual.Dominio\TrocaSmart.LojaVirtual.Dominio.csproj">
+      <Project>{6054310f-4638-4705-8fed-29c00f8a01b6}</Project>
+      <Name>TrocaSmart.LojaVirtual.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrocaSmart.LojaVirtual.Web\TrocaSmart.LojaVirtual.Web.csproj">
+      <Project>{dda4db24-8b2b-4d6a-9f35-dc065dc7b989}</Project>
+      <Name>TrocaSmart.LojaVirtual.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

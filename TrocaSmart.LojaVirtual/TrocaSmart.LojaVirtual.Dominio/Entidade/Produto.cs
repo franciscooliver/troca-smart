@@ -13,7 +13,7 @@ namespace TrocaSmart.LojaVirtual.Dominio.Entidade
         public string modelo { get; set; }
         public string Descricao { get; set; }
         public decimal Preco { get; set; }
-        public string status { get; set; }
+        public string Estatus { get; set; }
         public string Categoria { get; set; }
         public string Marca { get; set; }
 

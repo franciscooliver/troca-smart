@@ -19,7 +19,7 @@ namespace TrocaSmart.LojaVirtual.Dominio.Repositorio
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Entity<Produto>().ToTable("Produto");
+            modelBuilder.Entity<Produto>().ToTable("Produtos");
         }
     }
 }
