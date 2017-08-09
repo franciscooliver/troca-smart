@@ -1,12 +1,12 @@
 
 
-  html, body, .capa {
+  html, body {
 	height: 100%;
 	overflow: auto;
 }
 body {
 	
-	background: url('imagens/background_principal.jpg');
+	
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
 	overflow-x: hidden;
@@ -17,55 +17,182 @@ body {
 }
 
 .img-logo {
-	height: 132px;
-	width: 132px;
+	
 	display: block;
 	background-size: contain;
-	color: transparent;
+	
 }
 .navbar-brand{
-	padding: 20px 15px;
+	padding: 5px 5px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #333;
+}
+
+.navbar-toggle {
+    
+    background-color: #f0ad4e;
+    
 }
 
 .navbar-inverse .navbar-nav>li>a {
 	color: black;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, footer .nav a {
 	color: #F4A460;
+	background: none;
 }
 
+.img_borda{
+	
+	background-color: #F8F8F8;
+	border-color: #f0ad4e;
+}
+#imagens_smartphones .config_div_produto{
+	margin-top: 30px;
+	background-color: #F8F8F8;
+	align-content: center;
+	
+
+}
 
 #imagens_smartphones {
+
 	background: white;
-	padding-top: 60px;
+	padding-top: 30px;
 	padding-bottom: 20px;
+	
+}
+nav form{
+	margin-top: 15px;
+	
 }
 
 
+/* config sessao produtos*/
 
-#slide-div{
+.productbox {
+    background-color:#f8f8f8;;
+	padding:10px;
+	margin-left: 2px;
+	border:0.5px solid #000;
+	margin-bottom:10px;
+	-webkit-box-shadow: 0 8px 6px -6px  #999;
+	   -moz-box-shadow: 0 8px 6px -6px  #999;
+	        box-shadow: 0 8px 6px -6px #999;
+}
+
+.producttitle {
+    font-weight:bold;
+	padding:5px 0 5px 0;
+}
+
+.productprice {
+	border-top:1px solid #dadada;
+	padding-top:5px;
+}
+
+.pricetext {
+	font-weight:bold;
+	font-size:1.4em;
+}
+
+
+#slide-div {
 	margin-top: 50px;
 	padding-top: 50px;
-	width: 853px;
-	height: 350px;
+	z-index: 2;
+
 }
+#config_container_imagens{
+	margin-right: 28px;
+ 	margin-bottom: 28px;
+  padding: 10px;
+}
+#input_pesquisa{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+/*iput*/
+
+#adv-search {
+    padding: 10px 0 0 0;
+}
+
+#adv-search .nlk-dropdown {
+    left: -220px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+#nlk-search-submit {
+  width: 70px;
+  padding-left: 5px;
+  padding-right: 5px;  
+}
+
+#nlk-search-str {
+  min-width: 140px;
+}
+
+.adv-search-target {
+    margin: 5px 0 0 0;
+    font-size: smaller;
+}
+
 
 @media screen and (max-width: 767px){
 	.navbar-inverse {
     	background-color: #F8F8F8;
-   		border: 1px solid white;
+    	color: #F8F8F8;
+   		border: none;
 	}
+
+	#config_container_imagens{
+	margin-right: 28px;
+ 	margin-bottom: 28px;
+  	padding: 10px;
+  	margin-left: 28px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #ffffff;
+}
+
+
+#slide-div {
+	
+	margin-top: 20px;
+	padding-top: 50px;
+	width: 300px;
+	height: 150px;
+
+
+}
+.container .carousel-caption h1{
+	font-size: 15px;
+}
+
+}
+
 
 	.navbar-brand{
 		padding: 10px 5px;
+		border: none;
 }
 
-	.navbar-inverse> span .icon-bar {
-    	background-color: black;
-   
-	}
+	
 
 }
 
